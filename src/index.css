@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-manrope text-body-color bg-transparent bg-[#fdfdfd];
+}
+main {
+    @apply min-h-[300px];
+}
+.btn {
+    @apply text-center font-medium py-1 px-3 hover:-translate-y-0.5 transform transition rounded;
+}
+.btn-md {
+    @apply text-center font-medium py-2 px-5 hover:-translate-y-0.5 transform transition rounded;
+}
+.btn-lg {
+    @apply text-center font-medium py-3 px-8 hover:-translate-y-0.5 transform transition rounded;
+}
+.btn-red {
+    @apply bg-red hover:bg-opacity-90 text-white;
+}
+.btn-link {
+    @apply border-gray border text-black;
+}
+.btn-white {
+    @apply text-white border-[1.5px] border-white;
+}
+.form-class {
+    @apply appearance-none w-full text-sm rounded border-[1.5px] bg-transparent border-body-color py-2.5 px-3 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]
+}
